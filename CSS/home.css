@@ -68,7 +68,11 @@ a#nav-logo {
   font-size: 14px;
 }
 
+<<<<<<< Updated upstream
 .nav-list li a:hover {
+=======
+.nav-list li a:hover  {
+>>>>>>> Stashed changes
   margin: 0;
 }
 
@@ -77,7 +81,11 @@ a#nav-logo {
   padding-right: 10px;
 }
 
+<<<<<<< Updated upstream
 .nav-list li a:hover::after {
+=======
+.nav-list li a:hover::after  {
+>>>>>>> Stashed changes
   content: "<";
   padding-left: 10px;
 }

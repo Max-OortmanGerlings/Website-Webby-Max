@@ -146,6 +146,7 @@ a#nav-logo {
   display: none;
   position: absolute;
   width: 100%;
+  top: 50px;
   background: white;
   padding: 30px 0 20px;
   transform: translateY(-100%);
@@ -192,7 +193,7 @@ a#nav-logo {
 
   #mobile-nav.is-open {
     display: block;
-    transform: translateY(35%);
+    transform: translateY(0%);
   }
 
   .mobile-nav-toggle {
@@ -275,6 +276,10 @@ header {
     bottom: 0;
     left: 0;
   }
+
+  .header-container {
+    margin-bottom: 100px;
+  }
 }
 
 
@@ -295,11 +300,16 @@ header {
 
 .col-container h3 {
   margin: 0;
-  padding: 0;
+  padding:  87px 0;
   color: white;
+  width: 100%;
   text-transform: uppercase;
+  font-size: 20px;
   letter-spacing: 10px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.72, 0.3, 0.77, 0.85);
+  transition-delay: 0.15s;
 }
 
 .col-1 {
@@ -394,16 +404,49 @@ a.col-contact {
   box-shadow: -5px 5px 1px rgba(0, 0, 0, 0.4);
 }
 
+a.col-over-mij:hover h3 {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+a.col-over-webby-max:hover h3 {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+a.col-websites:hover h3 {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+a.col-contact:hover h3 {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 785px) {
+  .col-container {
+    display: block;
+    height: 100%;
+  }
+
+  .col-container a {
+    margin: 20px 0;
+    display: block;
+  }
+}
 /* FOOTER */
 
 footer {
-  margin: 0;
-  padding: 0 25px;
+  margin: 75px 0 0;
+  padding:;
+  width: 100%;
   height: 200px;
   background: #242a3d;
   display: flex;
   align-items: center;
   flex-direction: row;
+}
+
+.footer-logo {
+  margin: 0;
+  flex: 2;
 }
 
 h3#footer-logo {
@@ -414,15 +457,24 @@ h3#footer-logo {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 150px;
-  height: 40px;
+  width: 200px;
+  height: 60px;
   line-height: 0;
   font-size: 0;
   color: transparent;
 }
+
+.footer-list {
+  margin: 0;
+  padding: 0;
+  flex: 4;
+  max-width: 100%;
+}
+
 .footer-list h4 {
   color: #ccc;
   font-weight: lighter;
+  font-size: 14px;
 }
 
 .footer-list h5 {
@@ -433,9 +485,60 @@ h3#footer-logo {
 .footer-list h6 {
   color: #6d6d6d;
 }
+
 .footer-nav {
   margin: 0;
   padding: 0;
+  flex: 2;
+  max-width: 100%;
+}
+
+.footer-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav a {
+  margin: 0;
+  padding: 0;
+  color: #ccc;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+@media (max-width: 785px) {
+  footer {
+    display: block;
+  }
+  .footer-logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h3#footer-logo {
+    margin: 0 auto 15px;
+  }
+
+  .footer-nav,
+  .footer-list {
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  .footer-list {
+    line-height: 30px;
+  }
+
+  .footer-nav {
+    float: right;
+    clear: all;
+  }
 }
 
 /* OVER MIJ */

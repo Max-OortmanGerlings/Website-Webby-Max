@@ -4,9 +4,29 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100%;
+}
+
+.content {
+	padding-bottom:200px; /* Height of the footer element */
+}
+.footer {
+	width:100%;
+	height:200px;
+	position:absolute;
+	bottom:0;
+	left:0;
 }
 
 
@@ -288,8 +308,8 @@ section.thumbnail-row-1,
 section.thumbnail-row-2 {
   margin: 0;
   width: 100%;
-  flex: 2;
 }
+
 .col-container {
   margin: 0 20px 20px;
   padding: 0;
@@ -445,7 +465,7 @@ a.col-contact:hover h3 {
 /* FOOTER */
 
 footer {
-  margin: 75px 0 0;
+  margin: 0;
   padding: 0;
   width: 100%;
   height: 200px;
@@ -570,7 +590,7 @@ h3#footer-logo {
 /* OVER MIJ */
 /* ANDERE PAGINA */
 section {
-  margin: 50px auto 300px;
+  margin: 50px auto;
   width: 750px;
   max-width: 100%;
 }

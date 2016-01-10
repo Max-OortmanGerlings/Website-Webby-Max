@@ -310,6 +310,10 @@ section.thumbnail-row-2 {
   width: 100%;
 }
 
+section.thumbnail-row-2 {
+  margin-bottom: 75px;
+}
+
 .col-container {
   margin: 0 20px 20px;
   padding: 0;
@@ -546,9 +550,18 @@ h3#footer-logo {
 }
 
 @media (max-width: 785px ) {
+  .content {
+    padding-bottom: auto;
+  }
+
+  .footer {
+    height: auto;
+  }
+
   footer {
-    display: block;
     height: 100%;
+    display: block;
+    padding-bottom: 25px;
   }
   .footer-logo {
     display: block;
@@ -583,7 +596,7 @@ h3#footer-logo {
   }
   .footer-nav {
     float: none;
-    margin-bottom: 25px;
+    padding-bottom: 15px;
   }
 }
 

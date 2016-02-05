@@ -45,7 +45,7 @@ nav {
 
 .nav-container {
   margin: 0;
-  padding: 0 25px;
+  padding: 0 10px;
   max-width: 100%;
   display: flex;
   height: 100px;
@@ -56,6 +56,7 @@ nav {
 
 a#nav-logo {
   margin: 0;
+  margin-left: 10px;
   padding: 0;
   display: block;
   background-image: url(../SVG/Webby_Max_Logo_Color.svg);
@@ -202,7 +203,7 @@ a#nav-logo {
   }
 
   a#nav-logo {
-    height: 50px;
+    height: 60px;
     width: 135px;
   }
 
@@ -595,15 +596,6 @@ section {
   max-width: 100%;
 }
 
-section img {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  max-width: 100%;
-  border-radius: 1px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
-}
-
 section h3 {
   margin: 15px 0;
   text-align: center;
@@ -624,6 +616,11 @@ section p {
   section {
     margin-bottom: 150px;
   }
+
+  section p {
+    margin: 15px 20px 0;
+    font-size: 18px;
+  }
 }
 /* CONTACT */
 section.contact a {
@@ -640,7 +637,7 @@ section.contact a:first-of-type:before {
   margin: 10px 30px;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 25px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -651,10 +648,14 @@ section.contact a:last-of-type:before {
   margin: 10px 30px;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 25px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+section.contact a:active::before {
+  color: #35a7e7;
 }
 
 section.contact br {
@@ -676,8 +677,40 @@ section.contact br {
   section.contact a:last-of-type:before {
     font-size: 35px;
   }
+}
 
-  section.contact a:first-of-type:before {
-    transition:
+/* OVER MIJ */
+
+.column-container {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.column-container p {
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  flex: 7;
+}
+
+.column-container img {
+  flex: 3;
+  max-height: 200px;
+}
+
+@media (max-width: 785px) {
+  .column-container {
+    display: block;
+  }
+
+  .column-container p {
+    : 0 20px;
+  }
+
+  .column-container img {
+    margin: 50px 20px;
   }
 }
